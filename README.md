@@ -1,10 +1,9 @@
-# SCRIPTS
+# ~/bin
 
 ---
 
-bin scripts
-
-.
+                                
+.                               
 ├── anki_data_builder.py        
 ├── asc-to-gif.sh               
 ├── autoupdt                    
