@@ -5,41 +5,41 @@
 bin scripts
 
 .
-├── anki_data_builder.py
-├── asc-to-gif.sh
-├── autoupdt
-├── backup
-│   ├── backup-compress.sh
-│   ├── backup-export.sh
-│   └── backup-sync.sh
-├── blocks
-│   ├── battery
-│   ├── clock
-│   ├── cpu
-│   ├── disk
-│   ├── internet
-│   ├── memory
-│   ├── news
-│   └── volume
-├── choose
-├── dups
-├── formatname
-├── frequency
-├── getBlockList.sh
-├── i
-├── img.sh
-├── mdview.sh
-├── passive
-├── pjava
-├── post
-├── protonvpn-cli.sh
-├── pwned.py
-├── randcolour
-├── README.md
-├── todo
-├── top-commands
-├── top-words
-└── weasel
+├── anki_data_builder.py        
+├── asc-to-gif.sh               
+├── autoupdt                    
+├── backup                      
+│   ├── backup-compress.sh      
+│   ├── backup-export.sh        
+│   └── backup-sync.sh          
+├── blocks                      
+│   ├── battery                 
+│   ├── clock                   
+│   ├── cpu                     
+│   ├── disk                    
+│   ├── internet                
+│   ├── memory                  
+│   ├── news                    
+│   └── volume                  
+├── choose                      
+├── dups                        
+├── formatname                  
+├── frequency                   
+├── getBlockList.sh             
+├── i                           
+├── img.sh                      
+├── mdview.sh                   
+├── passive                     
+├── pjava                       
+├── post                        
+├── protonvpn-cli.sh            
+├── pwned.py                    
+├── randcolour                  
+├── README.md                   
+├── todo                        
+├── top-commands                
+├── top-words                   
+└── weasel                      
 
 **backup** - scripts to automate backup 
 
