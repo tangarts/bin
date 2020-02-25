@@ -1,0 +1,15 @@
+#!/bin/sh
+
+TODO=${TODO:-$HOME/.todo}
+
+append() {
+        echo $@ >> $TODO
+}
+
+list() {
+        test -df $TODO && nl $TODO
+}
+
+## test "$1" = '-d' && delete "$2" && exit 0
+
+exit 0

@@ -1,0 +1,9 @@
+#!/usr/sh
+
+# . used to separate file type extension
+# - OR _ use to separate logical words
+# PascalCase not normally used on *nix systems
+
+ tr -d ",.?!;\"'" | tr -s ' ' | tr 'A-Z ' 'a-z-' | sed "s/-*$//"`
+
+

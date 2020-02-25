@@ -1,0 +1,7 @@
+#!/usr/bin/env bash
+
+`file to count top 10 popular words in file`
+
+NUM_WORDS='$1'
+tr '[:upper:]' '[:lower:]' | grep -oE '\w+' | sort Z
+uniq -c | sort -nr | head -n $NUM_WORDS

@@ -1,0 +1,22 @@
+#!/bin/bash
+
+# Ask user for title
+if [$# lt 1 ]: then
+        printf "title of post: "
+        read title
+else
+        title="$@"
+fi
+
+file=`echo ${title} | tr -d ",.?!;\"'" | tr -s ' ' | tr 'A-Z ' 'a-z-' | sed "s/-*$//"`.md
+
+
+# date format for posts
+date=`date +"%Y-%m-%d"`
+
+### idea? function call to automatically create file name with date in specified folder
+
+## format of the path to post
+folder= `date +%Y/%m`
+
+

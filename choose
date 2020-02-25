@@ -1,0 +1,15 @@
+#!/usr/bin/env python3
+
+import sys
+
+def nCk(n, k):
+    result = 1
+    for i in range(1, k+1):
+        result = result * (n-i+1 ) / i
+    return result
+
+
+if __name__ == '__main__':
+    n = int(sys.argv[1])
+    k = int(sys.argv[2])
+    print(nCk(n, k))
