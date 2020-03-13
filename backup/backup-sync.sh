@@ -13,5 +13,5 @@ if [[ $EUID -ne 0 ]]; then
 fi
 
 logger -s "Starting filesystem sync"
-rsync -aAXS --delete-excluded --exclude-from=$BLACKLIST $SRC $DST
+rsync -aAXS --delete-after --exclude-from=$BLACKLIST $SRC $DST
 logger -s "Finished filesystem sync"
