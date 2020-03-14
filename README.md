@@ -8,6 +8,7 @@
 **blocks** | folder containing i3blocklets
 --- | ---
 **autoupdt** | for cron apt updates
+--- | ---
 **choose** | choose function (nCr)
 --- | ---
 **formatname** | 
@@ -20,7 +21,7 @@
 --- | ---
 **pjava** | processing (java) CLI 
 --- | ---
-**post** | for generating posts to website # 
+**post** | for generating posts to website 
 --- | ---
 **pwned.py** | 
 --- | ---
