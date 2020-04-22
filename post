@@ -1,23 +1,26 @@
 #!/bin/bash
 
-# date format for posts
-date=`date +"%Y-%m-%d"`
-
-# Ask user for title
-if [ $# -lt 1 ]
-then
-        title=$date
-else
-        title="$@"
-fi
-
-file=`echo ${title} | tr -d ",.?!;\"'" | tr -s ' ' | tr 'A-Z ' 'a-z-' | sed "s/-*$//"`.md
-
+DATE=`(date +'%Y-%m-%d')`
+FOLDER="/home/nehe/doc/blog"
 ### idea? function call to automatically create file name with date in specified folder
 
-## format of the path to post
-folder="/home/nehe/doc/blog/"
+if [ $# -lt 1 ]
+then 
+        TITLE="$DATE"
 
-cd $folder
-vi $file
+else
+        TITLE="$@"
+fi
+
+
+SLUG=$(echo "${TITLE}" | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)
+
+echo "title: $TITLE" >>  $FOLDER/$TITLE.md
+echo "slug: $SLUG" >> $FOLDER/$TITLE.md
+echo "date: $DATE" >> $FOLDER/$TITLE.md
+echo "status: "     >> $FOLDER/$TITLE.md
+echo ""              >> $FOLDER/$TITLE.md
+echo ""              >> $FOLDER/$TITLE.md
+${EDITOR} $FOLDER/$TITLE.md
+
 
