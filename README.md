@@ -2,7 +2,8 @@
 
 ---
 
-
+**file** | description
+--- | --- 
 **backup** | scripts to automate backup 
 **blocks** | folder containing i3blocklets
 **autoupdt** | for cron apt updates
