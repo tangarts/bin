@@ -25,6 +25,6 @@ then
         echo ""              >> $FOLDER/$TITLE.md
 fi
 
-${EDITOR} $FOLDER/$TITLE.md
+${EDITOR} + $FOLDER/$TITLE.md # vi + file.md -- open file with vi at EOF
 
 
