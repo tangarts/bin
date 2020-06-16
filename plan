@@ -1,0 +1,15 @@
+#!/bin/sh
+# inspired by john carmacks plan file
+
+
+DATE=`(date +'%Y-%m-%d')`
+FILE="/home/nehe/doc/plan"
+
+#if [$(tail -1 $FILE) ==  $DATE]
+#then 
+        echo "== $DATE =======" >> $FILE
+        echo ""                 >> $FILE
+        echo ""                 >> $FILE
+#fi
+
+${EDITOR} + $FILE
