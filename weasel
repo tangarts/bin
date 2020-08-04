@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
  
 weasels="many|various|very|fairly|several|extremely\
 |exceedingly|quite|remarkably|few|surprisingly\

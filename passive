@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/usr/bin/env sh
  
 irregulars="awoken|\
 been|born|beat|\
