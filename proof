@@ -1,0 +1,13 @@
+#!/bin/sh
+
+# Check style:
+FILE="$@"
+
+echo "weasel words: "
+`sh ~/bin/weasel` $FILE
+echo
+echo "passive voice: "
+`sh ~/bin/passive` $FILE
+echo
+echo "duplicates: "
+`perl ~/bin/dups` $FILE
