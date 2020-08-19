@@ -15,11 +15,13 @@ fi
 
 SLUG=$(echo "${TITLE}" | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)
 
+# if folder doesn't exist
 if [ ! -f "$FOLDER/$TITLE.md" ]
 then 
         echo "title: $TITLE" >>  $FOLDER/$TITLE.md
         echo "slug: $SLUG" >> $FOLDER/$TITLE.md
         echo "date: $DATE" >> $FOLDER/$TITLE.md
+        echo "modified: $DATE" >> $FOLDER/$TITLE.md
         echo "status: "     >> $FOLDER/$TITLE.md
         echo ""              >> $FOLDER/$TITLE.md
         echo ""              >> $FOLDER/$TITLE.md
