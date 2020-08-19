@@ -9,7 +9,7 @@ then
         TITLE="$DATE"
 
 else
-        TITLE="$*"
+        TITLE="$1"
 fi
 
 
