@@ -1,6 +1,6 @@
 #!/bin/sh
 # File: /usr/local/bin/backup-export.sh
-EXTERNAL_DRIVE=/mnt
+EXTERNAL_DRIVE=/media
 ARCHIVE_FILE="$1"
 
 if [ -z "$1" ]; then

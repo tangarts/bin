@@ -18,4 +18,5 @@ logger -s "Starting backup compression"
 tar czf $FILENAME $HOST
 logger -s "Finished backup compression"
 
-/home/nehe/bin/backup/backup-export.sh $FILENAME
+/home/nehe/.local/bin/backup/backup-export.sh $FILENAME
+
