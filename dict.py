@@ -1,9 +1,10 @@
-
+#!/usr/bin/env python3
+import sys
 import requests
 from bs4 import BeautifulSoup
 
 base_url = "http://www.websters1913.com/words/"
-word = input("enter a word: ")
+word = sys.argv[1]
 
 url = base_url + word
 
