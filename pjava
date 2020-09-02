@@ -1,7 +1,0 @@
-#!/usr/bin/env sh
-
-rm -rf /tmp/processing
-mkdir /tmp/processing
-
-
-/home/nehe/processing-3.5.4/processing-java --output=/tmp/processing/ --force --sketch=$PWD --run

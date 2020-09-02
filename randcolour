@@ -1,6 +1,0 @@
-#!/bin/sh
-
-for i in `seq 0 15`; do
-    c=$(tr -cd "0-9a-f" < /dev/urandom | fold -bw 6 | sed 1q)
-    printf "#%s\n" "$c"
-done

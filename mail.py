@@ -10,7 +10,7 @@ PORT = 587  # For starttls
 SMTP_SERVER = "smtp.office365.com"
 SENDER_EMAIL = ""
 RECEIVER_EMAIL =  ""
-PASSWORD = input("Type your password and press enter:")
+PASSWORD = input("Type your password and press enter: ")
 
 
 subject = "An email with attachment from Python"
