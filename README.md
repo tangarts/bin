@@ -1,6 +1,6 @@
 # ~/.local/bin
 
-Various scripts in my ~/.local/bin director
+Various scripts in my ~/.local/bin directory
 
 ---
 
