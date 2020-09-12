@@ -13,7 +13,7 @@ else
 fi
 
 
-## SLUG=$(echo "${TITLE}" | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)
+SLUG=$(echo "${TITLE}" | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)
 
 # if folder doesn't exist
 if [ ! -f "$FOLDER/$TITLE.md" ]
@@ -26,6 +26,6 @@ then
         echo ""              >> $FOLDER/$TITLE.md
 fi
 
-${EDITOR} + $FOLDER/$TITLE.md # vi + file.md -- open file with vi at EOF
+${EDITOR} + $FOLDER/$SLUG.md # vi + file.md -- open file with vi at EOF
 
 
