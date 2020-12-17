@@ -8,14 +8,15 @@ from email.mime.text import MIMEText
 
 PORT = 587  # For starttls
 SMTP_SERVER = "smtp.office365.com"
-SENDER_EMAIL = ""
-RECEIVER_EMAIL =  ""
-PASSWORD = input("Type your password and press enter: ")
 
+print("Compose Email")
+print(45*"-")
+RECEIVER_EMAIL =  input("To: ")
+SENDER_EMAIL = input("From: ")
+PASSWORD = input("Type your password and press enter: ")
 
 subject = "An email with attachment from Python"
 body = "This is an email with attachment sent from Python"
-
 
 # Create a multipart message and set headers
 message = MIMEMultipart()
@@ -36,9 +37,7 @@ text = message.as_string()
 
 context = ssl.create_default_context()
 with smtplib.SMTP(SMTP_SERVER, PORT) as server:
-    server.ehlo()  # Can be omitted
     server.starttls(context=context)
-    server.ehlo()  # Can be omitted
     server.login(SENDER_EMAIL, PASSWORD)
     server.sendmail(SENDER_EMAIL, RECEIVER_EMAIL, text)
 
