@@ -18,10 +18,12 @@ SLUG=$(echo "${TITLE}" | sed -e 's/[^[:alnum:]]/-/g' | tr -s '-' | tr A-Z a-z)
 # if folder doesn't exist
 if [ ! -f "$FOLDER/$SLUG.md" ]
 then 
+        echo "---"             >> $FOLDER/$SLUG.md
         echo "title: $TITLE"   >> $FOLDER/$SLUG.md
         echo "date: $DATE"     >> $FOLDER/$SLUG.md
         echo "modified: $DATE" >> $FOLDER/$SLUG.md
         echo "status: "        >> $FOLDER/$SLUG.md
+        echo "---"             >> $FOLDER/$SLUG.md
         echo ""                >> $FOLDER/$SLUG.md
         echo ""                >> $FOLDER/$SLUG.md
 fi

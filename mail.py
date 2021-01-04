@@ -1,5 +1,4 @@
 #!/usr/bin/env python3
-
 import email, smtplib, ssl
 from email import encoders
 from email.mime.base import MIMEBase
@@ -7,11 +6,12 @@ from email.mime.multipart import MIMEMultipart
 from email.mime.text import MIMEText
 
 PORT = 587  # For starttls
-SMTP_SERVER = "smtp.office365.com"
+# SMTP_SERVER = "smtp.office365.com"
+SMTP_SERVER = "smtp-mail.outlook.com"
 
 print("Compose Email")
 print(45*"-")
-RECEIVER_EMAIL =  input("To: ")
+RECEIVER_EMAIL = input("To: ")
 SENDER_EMAIL = input("From: ")
 PASSWORD = input("Type your password and press enter: ")
 
