@@ -4,10 +4,10 @@
 FILE="$@"
 
 echo "weasel words: "
-`sh ~/bin/weasel` $FILE
+weasel $FILE
 echo
 echo "passive voice: "
-`sh ~/bin/passive` $FILE
+passive $FILE
 echo
 echo "duplicates: "
-`perl ~/bin/dups` $FILE
+dups $FILE
