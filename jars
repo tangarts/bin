@@ -1,0 +1,5 @@
+#!/bin/sh
+
+QUERY=$@
+
+curl "https://clojars.org/search?q=$QUERY&format=json" | jq '.results[] | {group_name,jar_name,version}'

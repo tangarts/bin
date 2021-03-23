@@ -5,4 +5,7 @@ a.out
 blocks/
 zotero
 mail.py
-
+bb
+stack
+ipython*
+iptest*
