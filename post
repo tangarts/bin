@@ -2,7 +2,7 @@
 
 DATE=`(date +'%Y-%m-%d')`
 TIME=`(date +'%H:%M')`
-FOLDER="/home/nehe/doc/blog"
+FOLDER="/Users/nehe/Documents/blog"
 ### idea? function call to automatically create file name with date in specified folder
 
 if [ $# -lt 1 ]
