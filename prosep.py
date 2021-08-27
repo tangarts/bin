@@ -42,9 +42,9 @@ values = response.json()
 data = values[0]['data']['children'][0]['data']
 entry = {k: data[k] for k in ('id', 'title', 'selftext') if k in data}
 
-with open('/home/nehe/doc/data/prosep.txt', 'a') as json_file:
-    json.dump(entry, json_file)
-    json_file.write("\n")
+# with open('/home/nehe/doc/data/prosep.txt', 'a') as json_file:
+#     json.dump(entry, json_file)
+#     json_file.write("\n")
 
 print(entry['title']+"\n")
 print(entry['selftext'])
