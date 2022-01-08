@@ -32,6 +32,7 @@ Various scripts in my ~/.local/bin directory
 
 ## Tree view
 
+```
 .
 ├── README.md
 ├── asc-key-to-qr-code
@@ -62,4 +63,4 @@ Various scripts in my ~/.local/bin directory
 ├── tune
 ├── wiki2html.py
 └── wiki2html.sh
-
+```
