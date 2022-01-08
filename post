@@ -2,15 +2,16 @@
 
 DATE=`(date +'%Y-%m-%d')`
 TIME=`(date +'%H:%M')`
-FOLDER="/Users/nehe/Documents/blog"
+FOLDER="/Users/nehe/Documents/diary"
+
 ### idea? function call to automatically create file name with date in specified folder
 
 if [ $# -lt 1 ]
 then 
         TITLE="$DATE"
-
 else
         TITLE="$1"
+        FOLDER="/Users/nehe/Projects/tangarts/content/draft"
 fi
 
 
@@ -30,5 +31,3 @@ then
 fi
 
 ${EDITOR} + $FOLDER/$SLUG.md # vi + file.md -- open file with vi at EOF
-
-
