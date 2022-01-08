@@ -6,7 +6,7 @@ shopt -s extglob extquote
 # NOTE:  Todo.sh requires the .todo/config configuration file to run.
 # Place the .todo/config file in your home directory or use the -d option for a custom location.
 
-[ -f VERSION-FILE ] && . VERSION-FILE || VERSION="@DEV_VERSION@"
+[ -f VERSION-FILE ] && . VERSION-FILE || VERSION="2.12.0"
 version() {
     cat <<-EndVersion
 		TODO.TXT Command Line Interface v$VERSION
